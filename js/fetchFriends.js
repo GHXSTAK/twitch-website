@@ -5,8 +5,7 @@ fetch("/.netlify/functions/twitch")
   .then(res => res.json())
   .then(data => console.log(data))
   .then(data => {
-    const accessToken = data.access_token;
-    console.log("Got Twitch token:", accessToken);
+    
     // Streamers
     data.streamers.forEach(user => {
       const friend = document.createElement("div");
