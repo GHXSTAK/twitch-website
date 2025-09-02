@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 const SUsers = ["twistedtxx", "angelicdemon325", "plaguedemonn", "step_milkman", "allmondmlk", "rocka_timez", "0wabi0", "callzack", "slouchyharbor", "iiplaguedoctress", "the_hunter146", "starfirexox420_ttv", "duhkoterz", "itsbenzo_", "quek1tty", "bindbleed"];
 const nSUsers = ["zahra33op", "beeleavee", "caitlinharrisonx", "exiledxiv", "cozzslaps", "sugardaddywes"];
 
