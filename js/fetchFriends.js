@@ -4,8 +4,6 @@ const friendsNSContainer = document.getElementById("friends-ns-container");
 fetch("/.netlify/functions/twitch")
   .then(res => res.json())
   .then(data => console.log(data))
-  .catch(err => console.error(err))
-  .then(res => res.json())
   .then(data => {
     const accessToken = data.access_token;
     console.log("Got Twitch token:", accessToken);
