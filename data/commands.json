@@ -1,0 +1,164 @@
+[
+	{
+		"Command": "!song",
+		"Role": "Everyone",
+		"Description": "Displays the song currently playing",
+		"Response": "'ghost boy' by Lil Peep"
+	},
+	{
+		"Command": "!meow",
+		"Role": "Everyone",
+		"Description": "Displays the numbers of times this freak has meowed",
+		"Response": "Tak has meowed 444 times this year and 69 times this stream"
+	},
+	{
+		"Command": "!dc",
+		"Role": "Everyone",
+		"Description": "Displays the number of times this toxic dbd player made someone dc",
+		"Response": "Tak has made another player dc, that's 2 players dc so far!"
+	},
+	{
+		"Command": "!top",
+		"Role": "Everyone",
+		"Description": "Displays the top 5 yappers with type !top daily or !top watchtime for more",
+		"Response": "Top 5 Chatters: #1 - Ghostface (6900)..."
+	},
+	{
+		"Command": "!rank",
+		"Role": "Everyone",
+		"Description": "Shows your or someone else's yapper rank based on messages sent",
+		"Response": "@Ghostface is #80 and sent 690 messages"
+	},
+	{
+		"Command": "!rankdaily",
+		"Role": "Everyone",
+		"Description": "Shows your or someone else's daily rank based on the daily redemption"
+	},
+	{
+		"Command": "!ranktime",
+		"Role": "Everyone",
+		"Description": "Shows your or someone else's watchtime rank based on the daily redemption"
+	},
+	{
+		"Command": "!followage",
+		"Role": "Everyone",
+		"Description": "Shows how much time you or someone else've been following this freak",
+		"Response": "@Ghostface has been following for 2 years - that's 780 days in total"
+	},
+	{
+		"Command": "!watchtime",
+		"Role": "Everyone",
+		"Description": "Shows how much time you or someone else've been watching this freak",
+		"Response": "@Ghostface has watched Tak for 50hours."
+	},
+	{
+		"Command": "!clip",
+		"Role": "Everyone",
+		"Description": "Creates a clip of the last 30s",
+		"Response": "Here is the link to the clip you've created: ..."
+	},
+	{
+		"Command": "!dap",
+		"Role": "Everyone",
+		"Description": "Good way to greet each other",
+		"Response": "Thalita dapped up the homie ​​​Renato"
+	},
+	{
+		"Command": "!fmk",
+		"Role": "Everyone",
+		"Description": "Picks 3 random viewers or characters to fuck/marry/kill (!fmk dbd, !fmk valorant, !fmk marvel)",
+		"Response": "Fuck - Oni | Marry - Spirit | Kill - Claudette"
+	},
+	{
+		"Command": "!hug",
+		"Role": "Everyone",
+		"Description": "Give a hug to someone",
+		"Response": "Renato gave a heartfelt hug to Thalita"
+	},
+	{
+		"Command": "!spank",
+		"Role": "Everyone",
+		"Description": "For the ones who deserve some spanking",
+		"Response": "Johnny has been real naughty and got slapped back to reality on the bum bum"
+	},
+	{
+		"Command": "!love",
+		"Role": "Everyone",
+		"Description": "Checks your love percentage with someone else",
+		"Response": "Kitty loves Tak by 5%"
+	},
+	{
+		"Command": "!lurk",
+		"Role": "Everyone",
+		"Description": "If you gotta go, this is the one you need to use",
+		"Response": "Ghostface isn't gone, they are stalking us from the bushes"
+	},
+	{
+		"Command": "!pp",
+		"Role": "Everyone",
+		"Description": "Checks your or someone else's dick size",
+		"Response": "Venom has a 19' long pp"
+	},
+	{
+		"Command": "!tt",
+		"Role": "Everyone",
+		"Description": "Checks your or someone else's boob size",
+		"Response": "Emma Frost has E cup titties"
+	},
+	{
+		"Command": "!lg",
+		"Role": "Everyone",
+		"Description": "For the last game I play before getting off",
+		"Response": "a last game that could result in many more last games"
+	},
+	{
+		"Command": "!sr",
+		"Role": "Clique",
+		"Description": "(currently unavailable) VIP, subs and mods can use this to request songs",
+		"Response": "'Last Friday Night (T.G.I.F)' by 'Katy Perry' has been added to the queue"
+	},
+	{
+		"Command": "!bee",
+		"Role": "Everyone",
+		"Description": "For the ones who deserve some spanking",
+		"Response": "Bee’s taking wesker to the locker room of RPD for pp slaps"
+	},
+	{
+		"Command": "!discord",
+		"Role": "Clique",
+		"Description": "The link to my discord",
+		"Response" : "Join the squad: https://discord.gg/NeBht6cZua"
+	},
+	{
+		"Command": "!tiktok",
+		"Role": "Clique",
+		"Description": "The link to my tiktok",
+		"Response": "Follow my tiktok for more content: https://www.tiktok.com/@ghxstak_"
+	},
+	{
+		"Command": "!so",
+		"Role": "Mod",
+		"Description": "Shoutout to the user",
+		"Response": "Show some support to our fellow streamer Gekko on https://www.twitch.tv/GekkoTTV who played Valorant recently ✨"
+	},
+	{
+		"Command": "!raid",
+		"Role": "Mod",
+		"Description": "Starts the raid & send the raid message in chat"
+	},
+	{
+		"Command": "!game",
+		"Role": "Mod",
+		"Description": "Changes the game according to your input"
+	},
+	{
+		"Command": "!title",
+		"Role": "Mod",
+		"Description": "Changes the stream title to your input"
+	},
+	{
+		"Command": "!runads",
+		"Role": "Mod",
+		"Description": "Runs 1min 30s ads"
+	}
+]
