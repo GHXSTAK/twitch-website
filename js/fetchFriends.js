@@ -1,10 +1,10 @@
 const friendsSContainer = document.getElementById("friends-s-container");
 const friendsNSContainer = document.getElementById("friends-ns-container");
 
-fetch("/.netlify/functions/twitch")
+fetch("/.netlify/functions/twitchFetchFriends")
   .then(res => res.json())
   .then(data => {
-    console.log(data)
+    console.log(data);
 
     // Streamers
     data.streamers.forEach(user => {

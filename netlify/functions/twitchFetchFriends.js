@@ -1,8 +1,7 @@
-const SUsers = ["twistedtxx", "angelicdemon325", "plaguedemonn", "step_milkman", "allmondmlk", "rocka_timez", "0wabi0", "callzack", "slouchyharbor", "iiplaguedoctress", "the_hunter146", "starfirexox420_ttv", "duhkoterz", "itsbenzo_", "quek1tty", "bindbleed"];
+const SUsers = ["twistedtxx", "plaguedemonn", "step_milkman", "allmondmlk", "rocka_timez", "0wabi0", "callzack", "slouchyharbor", "iiplaguedoctress", "the_hunter146", "starfirexox420_ttv", "duhkoterz", "itsbenzo_", "quek1tty", "bindbleed"];
 const nSUsers = ["zahra33op", "beeleavee", "caitlinharrisonx", "exiledxiv", "cozzslaps", "sugardaddywes"];
 
 const nicknames = {
-  "angelicdemon325": "Angel",
   "twistedtxx": "Twisted",
   "step_milkman": "Milk",
   "allmondmlk": "Almond",
@@ -68,12 +67,8 @@ export async function handler(event) {
     }
     return results;
   };
-  const fetchLiveStatus = async(GHXSTAK) => {
-    const streamRes = await fetch(`https://api.twitch.tc/helix/streams?${user}`)
-  }
   const streamerData = await fetchUsers(SUsers, true);
   const nonStreamerData = await fetchUsers(nSUsers, false);
-  const liveStatus = await fetchLiveStatus()
 
   return {
     statusCode: 200,
