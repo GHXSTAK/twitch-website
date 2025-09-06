@@ -46,5 +46,9 @@ const liveStatus = await fetchLiveStatus(USERNAME);
 
 return {
   statusCode: 200,
-  body: JSON.stringify(liveStatus)
+  body: JSON.stringify({
+    login: u.login,
+    display_name: u.display_name,
+    isLive: streamData.data && streamData.data.length > 0,
+  }),
 };
