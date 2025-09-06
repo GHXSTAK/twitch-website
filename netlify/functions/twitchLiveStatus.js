@@ -21,7 +21,7 @@ export async function handler(event) {
           const userData = await userRes.json();
           const u = userData.data[0];
 
-          const streamRes = await fetch(`https://api.twitch.tv/helix/streams?${USERNAME}`{
+          const streamRes = await fetch(`https://api.twitch.tv/helix/streams?${USERNAME}`, {
             headers: {
               "Client-ID": CLIENT_ID,
               "Authorization": `Bearer ${accessToken}`
