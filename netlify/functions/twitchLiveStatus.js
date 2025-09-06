@@ -9,7 +9,9 @@ export async function handler(event) {
       { method: "POST" }
     );
     const tokenData = await tokenRes.json();
+    console.log("Token response:", tokenData);
     const accessToken = tokenData.access_token;
+    if (!accessToken) throw new Error("No access token returned from Twitch");
 
     const userRes = await fetch(`https://api.twitch.tv/helix/users?login=${user}`, {
       headers: {
@@ -20,6 +22,10 @@ export async function handler(event) {
 
     const userData = await userRes.json();
     const u = userData.data[0];
+    console.log("User response:", userData);
+    if (!userData.data || userData.data.length === 0) {
+      throw new Error("No user data found");
+    }
 
     const streamRes = await fetch(`https://api.twitch.tv/helix/streams?user_login=${user}`, {
       headers: {
@@ -28,6 +34,7 @@ export async function handler(event) {
       }
     });
     const streamData = await streamRes.json();
+    console.log("Stream response:", streamData);
 
     return {
       statusCode: 200,
@@ -37,7 +44,7 @@ export async function handler(event) {
         isLive: streamData.data && streamData.data.length > 0,
       })
     };
-    
+
   } catch(err){
       console.error("Error fetching Twitch stauts", err);
       return {
