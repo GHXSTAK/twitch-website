@@ -1,7 +1,7 @@
 export async function handler(event) {
   const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
   const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
-  const USERNAME = "ghxstak";
+  const user = "ghxstak";
 
   try {
     const tokenRes = await fetch(
