@@ -10,20 +10,23 @@
     {
         "id": "fmkdbd",
         "description": "A fuck marry kill command for every of your dead by daylight character. Some have special nicknames",
-        "streamelements":"",
+        "streamelements":"!cmd add !fmkdbd Fuck: $(random.pick $(urlfetch https://pastebin.com/raw/uBBkMhwg)) | Marry: $(random.pick $(urlfetch https://pastebin.com/raw/uBBkMhwg)) | Kill: $(random.pick $(urlfetch https://pastebin.com/raw/uBBkMhwg))",
         "nightbot":"!addcom !fmkdbd Fuck: $(eval a=$(urlfetch json https://pastebin.com/raw/uBBkMhwg);a[Math.floor(Math.random()*a.length)]), Marry: $(eval a=$(urlfetch json https://pastebin.com/raw/uBBkMhwg);a[Math.floor(Math.random()*a.length)]), Kill: $(eval a=$(urlfetch json https://pastebin.com/raw/uBBkMhwg);a[Math.floor(Math.random()*a.length)])",
+        "wizebot":"!cmd add !fmkdbd Fuck: $random_string($urlcall(https://pastebin.com/raw/uBBkMhwg)) | Marry: $random_string($urlcall(https://pastebin.com/raw/uBBkMhwg)) | Kill: $random_string($urlcall(https://pastebin.com/raw/uBBkMhwg))"
     },
     {
         "id": "fmkmarvel",
         "description": "A fuck marry kill command for every of your dead by daylight character. Some have special nicknames",
-        "streamelements":"",
+        "streamelements":"!cmd add !fmkmarvel Fuck: $(random.pick $(urlfetch https://pastebin.com/raw/rTpx1zbR)) | Marry: $(random.pick $(urlfetch https://pastebin.com/raw/rTpx1zbR)) | Kill: $(random.pick $(urlfetch https://pastebin.com/raw/rTpx1zbR))",
         "nightbot":"!addcom !fmkmarvel Fuck: $(eval a=$(urlfetch json https://pastebin.com/raw/rTpx1zbR);a[Math.floor(Math.random()*a.length)]), Marry: $(eval a=$(urlfetch json https://pastebin.com/raw/rTpx1zbR);a[Math.floor(Math.random()*a.length)]), Kill: $(eval a=$(urlfetch json https://pastebin.com/raw/rTpx1zbR);a[Math.floor(Math.random()*a.length)])",
+        "wizebot":"!cmd add !fmkdbd Fuck: $random_string($urlcall(https://pastebin.com/raw/rTpx1zbR)) | Marry: $random_string($urlcall(https://pastebin.com/raw/rTpx1zbR)) | Kill: $random_string($urlcall(https://pastebin.com/raw/rTpx1zbR))"
     }
     {
         "id": "fmkvalo",
         "description": "A fuck marry kill command for every of your dead by daylight character. Some have special nicknames",
         "streamelements":"",
         "nightbot":"!addcom !fmkvalo Fuck: $(eval a=$(urlfetch json https://pastebin.com/raw/rTpx1zbR);a[Math.floor(Math.random()*a.length)]), Marry: $(eval a=$(urlfetch json https://pastebin.com/raw/rTpx1zbR);a[Math.floor(Math.random()*a.length)]), Kill: $(eval a=$(urlfetch json https://pastebin.com/raw/rTpx1zbR);a[Math.floor(Math.random()*a.length)])",
+        "wizebot":""
     }
     ]
 }

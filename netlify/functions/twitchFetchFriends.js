@@ -25,10 +25,6 @@ const nicknames = {
   "iiplaguedoctress": "Plaguess"
 };
 
-const exceptUsers = {
-  "cozzslaps": "https://cdn.discordapp.com/avatars/1172873389514432562/09cb2ec45b49f6e7f44d9d41259f9849.webp?size=512"
-};
-
 export async function handler(event) {
   const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
   const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
@@ -56,7 +52,7 @@ export async function handler(event) {
           results.push({
             login: u.login,
             display_name: u.display_name,
-            profile_image_url: exceptUsers[user] || u.profile_image_url,
+            profile_image_url: u.profile_image_url,
             nickname: nicknames[user] || null,
             isStreamer: streamer
           });
