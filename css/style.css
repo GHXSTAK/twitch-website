@@ -27,7 +27,7 @@ body {
 	background-color: var(--background);
 	font-family: 'Roboto Slab', serif;
 	color: var(--text);
-	font-size: var(--fsize-0);
+	font-size: var(--fsize-medium);
 }
 
 #page-container{
@@ -91,12 +91,6 @@ h1 {
 	flex-grow: 1;
 	align-items: center;
 	justify-content: space-between;
-}
-
-.logo-picture{
-	width: 70px;
-	min-width: 70px;
-	max-width: 15vw;
 }
 
 .website-links-container{
@@ -336,10 +330,7 @@ main{
 }
 
 .profile-container {
-	background-image: url("../assets/banner.jpg");
-	background-position: center top;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+	background: radial-gradient(circle at center, rgba(84,33,172,0.15) 0%, var(--bg) 100%);
 	gap: 1rem;
 	text-align: center;
 }
@@ -352,7 +343,6 @@ main{
 	background: transparent;
 	color: var(--text);
 	border: var(--primary) solid;
-	border-radius: 25px 25px;
 	padding: 12px 30px;
 	cursor: pointer
 }
