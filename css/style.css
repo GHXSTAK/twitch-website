@@ -40,9 +40,12 @@ body {
 
 /* HEADER */
 header {
+	top: 0;
+	background: var(--background);
 	width: 100%;
 	z-index: 1000;
-	position: relative;
+	position: sticky;
+	display: flex;
 }
 
 /* GENERAL */
@@ -71,7 +74,6 @@ svg:hover{
 	background: black;
 	display: flex;
 	flex-wrap: wrap;
-	position: fixed;
 	top: 0;
 	width: 100%;
 }
@@ -86,7 +88,6 @@ nav {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	padding: 0 1rem;
-	width: 100%;
 }
 
 .web-title, 
@@ -429,6 +430,7 @@ main{
 }
 
 .broadcaster {
+	margin: 0;
 	color: var(--secondary);
 	text-shadow: 0 0 12px var(--primary);
 	text-align: center;
