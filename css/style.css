@@ -5,7 +5,8 @@
 	--surface: #060408;
 	--surface-accent:#0d0716;
 	--text: #fbfbfb;
-	--mutetext: #9269b1;
+	--accent: #9013FB;
+	--mutetext: #6a5e73;
 	--primary: #4E0F7E;
 	--secondary: #9013FB;
 
@@ -14,6 +15,8 @@
 	--fsize-large: 1.5rem;
 	--fsize-extra: 2rem;
 	--fsize-mega: 3rem;
+
+	--spacing: 0.125rem
 
 	--bradius-small: 0.125rem solid;
 	--bradius-medium: 0.25rem solid;
@@ -60,6 +63,7 @@ svg{
 
 svg:hover{
 	fill: var(--primary);
+	transition: fill 0.3s;
 }
 
 /* NAVBAR */
@@ -70,6 +74,10 @@ svg:hover{
 	position: fixed;
 	top: 0;
 	width: 100%;
+}
+
+.navbar {
+	margin: 8px 0;
 }
 
 nav {
@@ -140,6 +148,7 @@ h1 {
 }
 
 .hamburger {
+	color: var(--text)
 	display: none;
 	font-size: 2rem;
 	background: none;
@@ -208,7 +217,7 @@ h1 {
 }
 
 .web-links li li a {
-	color: #808080;
+	color: var(--mutetext);
 }
 
 @media (max-width: 768px){
@@ -317,11 +326,11 @@ main{
 }
 
 .title {
-
-}
-
-.main-title {
-
+	text-align: center;
+	font-family: 'UnifrakturCook', cursive;
+	font-size: var(--fsize-mega);
+	color: var(--primary);
+	margin: 0;
 }
 
 .profile-image {
@@ -336,19 +345,32 @@ main{
 }
 
 .profile-header {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 #join-the-stream {
+	font-family: 'Roboto Slab';
 	background: transparent;
-	color: var(--text);
-	border: var(--primary) solid;
+	margin-top: 16px;
+	color: var(--accent);
+	border: var(--primary) solid 2px;
 	padding: 12px 30px;
-	cursor: pointer
+	cursor: pointer;
+	transition: letter-spacing 0.5s;
+	border-radius: 12px;
 }
 
 #join-the-stream:hover {
 	background: var(--secondary);
+	color: var(--text);
+	border: transparent solid 2px;
+	box-shadow: 0 0 8px var(--secondary);
+	letter-spacing: var(--spacing);
+	transition: letter-spacing 0.5s;
+}
+
+.paragroup {
+	margin: 2rem 0;
 }
 
 #live-icon {
@@ -406,16 +428,19 @@ main{
   }
 }
 
-h1 {
+.broadcaster {
+	color: var(--secondary);
+	text-shadow: 0 0 12px var(--primary);
 	text-align: center;
 	font-family: 'UnifrakturCook', cursive;
 	font-size: var(--fsize-mega);
 	color: var(--secondary);
-	margin-bottom: 2rem;
 }
 
-h2 {
-	font-size: 1rem;
+.profile-description {
+	display: flex;
+	margin: 2rem auto;
+	max-width: 1000px;
 }
 
 .table-switch-buttons button{
@@ -709,7 +734,7 @@ p {
 
 /* FOOTER */
 .footer-name{
-	color: var(--secondary);
+	color: var(--primary);
 	font-family: 'UnifrakturCook', cursive;
 }
 
