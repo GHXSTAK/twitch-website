@@ -16,7 +16,7 @@
 	--fsize-extra: 2rem;
 	--fsize-mega: 3rem;
 
-	--spacing: 0.125rem
+	--spacing: 0.125rem;
 
 	--bradius-small: 0.125rem solid;
 	--bradius-medium: 0.25rem solid;
@@ -148,7 +148,7 @@ h1 {
 }
 
 .hamburger {
-	color: var(--text)
+	color: var(--text);
 	display: none;
 	font-size: 2rem;
 	background: none;
@@ -352,7 +352,7 @@ main{
 	font-family: 'Roboto Slab';
 	background: transparent;
 	margin-top: 16px;
-	color: var(--accent);
+	color: var(--primary);
 	border: var(--primary) solid 2px;
 	padding: 12px 30px;
 	cursor: pointer;
