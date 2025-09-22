@@ -6,14 +6,13 @@
 	<title>GHXSTAK</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="icon" type="image/x-icon" href="../images/ghxst.ico">
-	<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 </head>
 <body class="">
 	<div id="page-container">
 		<header>
 			<div class="navbar-container">
 				<nav class="navbar">
-					<img class="logo-picture" src="../images/logo.png">
+					<h1 class="broadcaster">ghxstak</h1>
 					<button class="hamburger" aria-label="Toggle menu">☰</button>
 					<div class="navbar-links">
 						<div class="website-links-container">
@@ -83,43 +82,44 @@
 			<div class="profile-container">
 				<h1 class="header-name">Commands</h1>
 			</div>
-			<div class="filters-container">
-				<div class="role-container">
-					<button id="role-filter">
-						<span class="selected-role">Everyone</span>
-						<ul class="role-filter-options">
-							<li>Everyone</li>
-							<li>Clique</li>
-							<li>Mod</li>
-						</ul>
-						<span class = "drop-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path d="M7.684 9.689a.699.699 0 00-.97 0 .656.656 0 000 .945l4.801 4.677c.268.261.702.261.97 0l4.801-4.677a.656.656 0 000-.945.699.699 0 00-.97 0L12 13.894 7.684 9.689z"></path></svg>
+			<div class="commands-container">
+				<div class="filters-container">
+					<div class="role-container">
+						<button id="role-filter">
+							<span class="selected-role">Everyone</span>
+							<ul class="role-filter-options">
+								<li>Everyone</li>
+								<li>Clique</li>
+								<li>Mod</li>
+							</ul>
+							<span class = "drop-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path d="M7.684 9.689a.699.699 0 00-.97 0 .656.656 0 000 .945l4.801 4.677c.268.261.702.261.97 0l4.801-4.677a.656.656 0 000-.945.699.699 0 00-.97 0L12 13.894 7.684 9.689z"></path></svg>
+							</span>
+						</button>
+					</div>
+					<div class="search-bar">
+						<input id="search-input" type="text" placeholder="Search"></input>
+						<span class = "search-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path d="M14.71 14h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0L14 15.5v-.79l-.27-.28a6.5 6.5 0 01-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 017.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 01-1.48 5.34l.28.27zM5 9.5C5 11.99 7.01 14 9.5 14S14 11.99 14 9.5 11.99 5 9.5 5 5 7.01 5 9.5z"></path></svg>
 						</span>
-					</button>
+					</div>
 				</div>
-				<div class="search-bar">
-					<input id="search-input" type="text" placeholder="Search"></input>
-					<span class = "search-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path d="M14.71 14h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0L14 15.5v-.79l-.27-.28a6.5 6.5 0 01-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 017.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 01-1.48 5.34l.28.27zM5 9.5C5 11.99 7.01 14 9.5 14S14 11.99 14 9.5 11.99 5 9.5 5 5 7.01 5 9.5z"></path></svg>
-					</span>
+				<div class= "table-container">
+					<table class="tablist cmdlist">
+						<thead>
+							<tr>
+								<th>Command</th>
+								<th>Permission</th>
+								<th>Description/Response</th>
+							</tr>
+						</thead>
+						<tbody id="Commands"></tbody>
+					</table>
 				</div>
-			</div>
-			<div class= "table-container">
-				<table class="tablist cmdlist">
-					<thead>
-						<tr>
-							<th>Command</th>
-							<th>Permission</th>
-							<th>Description/Response</th>
-						</tr>
-					</thead>
-					<tbody id="Commands"></tbody>
-				</table>
 			</div>
 		</main>
 		<footer>
 			<div class="footer-container">
-				<h1 class="footer-name">GHXSTAK</h1>
 				<div class="social-links-container-footer">
 					<ul class="links-list">
 						<li>
