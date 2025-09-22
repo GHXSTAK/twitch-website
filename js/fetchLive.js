@@ -1,4 +1,5 @@
-const liveText = document.getElementById("join-the-stream");
+const liveText = document.getElementById("livestream");
+const liveContainer = document.getElementById("live-container")
 
 fetch("/.netlify/functions/twitchLiveStatus")
   .then(res => res.json())
@@ -8,11 +9,16 @@ fetch("/.netlify/functions/twitchLiveStatus")
     if (data.isLive) {
       const liveIcon = document.createElement("div");
       const liveIconPulse = document.createElement("span");
+
       liveIcon.setAttribute("id", "live-icon");
-      liveText.textContent = "Join the stream";
-      liveText.appendChild(liveIcon);
       liveIcon.appendChild(liveIconPulse);
+
+      liveText.classList.add("is-live");
+      liveText.textContent = "Join the stream";
+
+      liveContainer.prepend(liveIcon);
     } else {
+      liveText.classList.remove("is-live");
       liveText.textContent = "Check my Twitch";
     }
   })

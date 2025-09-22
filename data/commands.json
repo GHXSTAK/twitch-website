@@ -112,16 +112,16 @@
 		"Response": "a last game that could result in many more last games"
 	},
 	{
-		"Command": "!sr",
-		"Role": "Clique",
-		"Description": "(currently unavailable) VIP, subs and mods can use this to request songs",
-		"Response": "'Last Friday Night (T.G.I.F)' by 'Katy Perry' has been added to the queue"
-	},
-	{
 		"Command": "!bee",
 		"Role": "Everyone",
 		"Description": "For the ones who deserve some spanking",
 		"Response": "Bee’s taking wesker to the locker room of RPD for pp slaps"
+	},
+	{
+		"Command": "!sr",
+		"Role": "Clique",
+		"Description": "(currently unavailable) VIP, subs and mods can use this to request songs",
+		"Response": "'Last Friday Night (T.G.I.F)' by 'Katy Perry' has been added to the queue"
 	},
 	{
 		"Command": "!discord",
