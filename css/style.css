@@ -10,7 +10,7 @@
 	--primary: #4E0F7E;
 	--secondary: #9013FB;
 
-	--dfont: 'Roboto Slab';
+	--dfont: 'Inter', sans-serif;
 	--hfont: 'UnifrakturCook', cursive;
 	--fsize-small: 0.75rem;
 	--fsize-medium: 1rem;
@@ -43,7 +43,7 @@ body {
 /* HEADER */
 header {
 	top: 0;
-	background: var(--background);
+	background: rgba(0,0,0,0.5);
 	width: 100%;
 	z-index: 1000;
 	position: sticky;
@@ -374,10 +374,6 @@ main{
 	transition: letter-spacing 0.5s;
 }
 
-.paragroup {
-	margin: 2rem 0;
-}
-
 
 #live-icon {
   position: absolute;
@@ -445,14 +441,30 @@ main{
 }
 
 .profile-description {
-	display: flex;
-	margin: 2rem 2rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: auto;
 	padding: 1rem 2rem;
-	max-width: 1000px;
+	gap: 2rem;
+	width: fit-content;
+}
+
+.profile-picture {
+	width: 100%;
+	height: auto;
+}
+
+.table-switch-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .table-switch-buttons button{
 	display: none;
+	background-color: var(--accent);
+	border-radius: 4px;
+	border: var(--accent) 2px solid;
+	box-shadow: 0 0 16px var(--accent);
 }
 
 .alltable-container {
@@ -490,8 +502,7 @@ main{
 }
 
 .table-title-container {
-	padding: 1rem;
-	background-color: var(--surface-accent);
+	background-color: var(--background);
 	position: sticky;
 	z-index: 10;
 	top: 0;
@@ -578,7 +589,8 @@ tr:nth-child(even) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: fit-content;
+	width: 1000px;
+	margin: auto;
 }
 
 .filters-container {
@@ -708,14 +720,10 @@ tr:nth-child(even) {
 	text-align: center;
 }
 
-p {
-	text-align: center;
-}
-
-
 @media (max-width: 768px){
-	.profile-image{
-
+	.profile-description{
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.table-switch-buttons{
