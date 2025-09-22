@@ -6,10 +6,12 @@ fetch("/.netlify/functions/twitchLiveStatus")
     console.log(data);
 
     if (data.isLive) {
-      const liveIcon = document.createElement("span");
-      liveIcon.setAttribute("id", "live-icon")
+      const liveIcon = document.createElement("div");
+      const liveIconPulse = document.createElement("span");
+      liveIcon.setAttribute("id", "live-icon");
       liveText.textContent = "Join the stream";
-      liveText.appendChild(liveIcon)
+      liveText.appendChild(liveIcon);
+      liveIcon.appendChild(liveIconPulse);
     } else {
       liveText.textContent = "Check my Twitch";
     }
