@@ -1,15 +1,16 @@
-const liveIcon = document.getElementById("live-icon");
 const liveText = document.getElementById("join-the-stream");
 
 fetch("/.netlify/functions/twitchLiveStatus")
   .then(res => res.json())
   .then(data => {
     console.log(data);
+
     if (data.isLive) {
-      liveIcon.style.display = "inline";
+      const liveIcon = document.createElement("span");
+      liveIcon.setAttribute("id", "live-icon")
       liveText.textContent = "Join the stream";
+      liveText.appendChild(liveIcon)
     } else {
-      liveIcon.style.display = "none";
       liveText.textContent = "Check my Twitch";
     }
   })
