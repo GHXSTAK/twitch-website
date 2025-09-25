@@ -44,32 +44,26 @@ leaderboardTypes.forEach(type => {
 function showTable(type) {
 	const containers = document.querySelectorAll('.table-container');
 	containers.forEach((container) => {
-		const table = container.querySelector('table');
-		if (window.innerWidth < 768) {
-			const leaderboard = container.querySelector(`#${type}Leaderboard`);
-			container.style.display = leaderboard ? 'block' : 'none';
-		} else {
-			container.style.display = 'block'
-		}
-	});
+		if (container.querySelector(`#${type}Leaderboard`)) {
+            container.style.display = 'block';
+        } else {
+            container.style.display = 'none';
+        }
+    });
 }
-window.addEventListener('resize', () => {
-	if (window.innerWidth >= 768) {
-		document.querySelectorAll('.table-container').forEach(c => {
-			c.style.display = 'block';
-	});
-	} else {
-		showTable('chat');
-	}
+
+document.addEventListener("DOMContentLoaded", () => {
+	showTable('chat');
+	const defaultLeadSwitch = document.getElementById('leaderboard-switch');
+	if (defaultLeadSwitch) defaultLeadSwitch.classList.add('active-switch');
 });
 
-if (window.innerWidth < 768) {
-	showTable('chat');
-}
-
-document.querySelectorAll('.table-switch-buttons button').forEach((btn, index) => {
-	btn.addEventListener('click', () => {
+document.querySelectorAll('.leaderboard-switch').forEach((activeLeadSwitch, index) => {
+	activeLeadSwitch.addEventListener('click', () => {
 		const type = leaderboardTypes[index];
 		showTable(type);
+		document.querySelectorAll('.leaderboard-switch').forEach(btn => btn.classList.remove('active-switch'));
+		activeLeadSwitch.classList.add('active-switch')
+		
 	});
 });
