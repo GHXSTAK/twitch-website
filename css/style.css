@@ -347,9 +347,6 @@ main{
 	background: radial-gradient(circle at center, rgba(84,33,172,0.15) 0%, var(--background) 100%);
 	gap: 1rem;
 	text-align: center;
-}
-
-.profile-header {
 	padding: 50px 0;
 }
 
@@ -764,17 +761,21 @@ tr:nth-child(even) {
 .game-container{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2rem;
 }
 
 .game-section {
 	border: var(--secondary) solid 2px;
-	box-shadow: 0 0 16px var(--accent);
+	border-radius: 12px;
+	box-shadow: 0 0 8px var(--accent);
 }
 
 /* FOOTER */
 .footer-name{
 	color: var(--primary);
-	font-family: var(--hfont);
+	font-family: var(--dfont);
+	width: fit-content;
+	margin: auto;
 }
 
 .footer-container{
