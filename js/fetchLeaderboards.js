@@ -6,7 +6,7 @@ leaderboardTypes.forEach(type => {
 		.then(data => {
 			const tbody = document.getElementById(`${type}Leaderboard`);
 			tbody.innerHTML = '';
-
+			
 			data.forEach((item, index) => {
 				const tr = document.createElement('tr');
 

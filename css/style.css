@@ -451,17 +451,23 @@ main{
 .leaderboard-switch-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin: 2rem;
 }
 
-.leaderboard-switch{
+.leaderboard-switch {
 	display: block;
 	color: white;
+	background-color: transparent;
 	position: relative;
 	text-align: center;
 	border-radius: 4px;
 	border: var(--accent) 2px solid;
 	box-shadow: 0 0 16px var(--accent);
 	margin-bottom:1rem;
+}
+
+.leaderboard-switch.active-switch {
+	background-color: var(--accent);
 }
 
 .alltable-container {
