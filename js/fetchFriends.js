@@ -39,7 +39,7 @@ fetch("/.netlify/functions/twitchFetchFriends")
     data.nonStreamers.forEach(user => {
       const friend = document.createElement("div");
 
-      const nickname = document.createElement("p");
+      const nickname = document.createElement("h2");
       nickname.textContent = user.nickname || user.display_name;
       nickname.classList.add("nickname-text");
 

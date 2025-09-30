@@ -10,7 +10,7 @@
 	--primary: #4E0F7E;
 	--secondary: #9013FB;
 
-	--dfont: 'Inter', sans-serif;
+	--dfont: 'Montserrat', sans-serif;
 	--hfont: 'UnifrakturCook', cursive;
 	--fsize-small: 0.75rem;
 	--fsize-medium: 1rem;
@@ -380,7 +380,8 @@ main{
 
 #livestream.is-live {
 	background: var(--primary);
-	border: var(--primary)
+	border: var(--primary);
+	color: var(--text);
 }
 
 #live-icon {
@@ -441,6 +442,11 @@ main{
 	padding: 1rem 2rem;
 	gap: 2rem;
 	width: fit-content;
+}
+.profile-desc-description {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
 }
 
 .profile-picture {
